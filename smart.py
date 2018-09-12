@@ -12,7 +12,8 @@ c = ModbusClient()
 
 
 def printer():
-	print("Power KWH: ",abc[1],"KWH")
+	
+	''' print("Power KWH: ",abc[1],"KWH")
         print("Power KVAH: ",abc[2],"KVAH")
         print("Power KVAr: ",abc[3],"KVArH")
         print("Line Voltages:" )
@@ -46,7 +47,7 @@ def printer():
         print("\tReactive Power on B: ",abc[23],"KVAr")
         print("\tApparent Power on R: ",abc[24],"KVA")
         print("\tApparent Power on Y: ",abc[25],"KVA")
-        print("\tApparent Power on B: ",abc[26],"KVA")
+        print("\tApparent Power on B: ",abc[26],"KVA") '''
 	
 
 # define modbus server host, port
