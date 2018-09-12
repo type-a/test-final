@@ -77,7 +77,7 @@ while True:
         #truncate the float value upto 3 decimal places
 
         #Display real time values on Screen
-	print(abc)
+# 	print(abc)
 	
         # Time and Date Formatting
         #csvstr = datetime.datetime.strftime(mydate, '%Y/%m/%d -- %H:%M:%S')
