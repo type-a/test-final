@@ -89,4 +89,4 @@ while True:
         #   writer = csv.writer(myFile,delimiter=',',quoting=csv.QUOTE_ALL)
         #   writer.writerow(abc)
 
-   time.sleep(0.5)
+#    time.sleep(0.5)
