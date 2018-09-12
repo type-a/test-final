@@ -1,6 +1,6 @@
 from pyModbusTCP.client import ModbusClient
 from pyModbusTCP import utils
-import csv
+#import csv
 import datetime
 import time
 
@@ -35,10 +35,11 @@ while True:
         csvwrite=abc
         l=len(csvwrite)
         #truncate the float value upto 3 decimal places
+	
         for i in range (0,l):
             csvwrite[i]="%0.3f"%csvwrite[i]
         #Display real time values on Screen
-        print("Power KWH: ",abc[1],"KWH")
+'''     print("Power KWH: ",abc[1],"KWH")
         print("Power KVAH: ",abc[2],"KVAH")
         print("Power KVAr: ",abc[3],"KVArH")
         print("Line Voltages:" )
@@ -72,16 +73,18 @@ while True:
         print("\tReactive Power on B: ",abc[23],"KVAr")
         print("\tApparent Power on R: ",abc[24],"KVA")
         print("\tApparent Power on Y: ",abc[25],"KVA")
-        print("\tApparent Power on B: ",abc[26],"KVA")
+        print("\tApparent Power on B: ",abc[26],"KVA")'''
+	
         # Time and Date Formatting
-        csvstr = datetime.datetime.strftime(mydate, '%Y/%m/%d -- %H:%M:%S')
-        abc[0]=csvstr
-        print(abc[0])
+        #csvstr = datetime.datetime.strftime(mydate, '%Y/%m/%d -- %H:%M:%S')
+        #abc[0]=csvstr
+        #print(abc)
         #Send data to a excel file
-        myFile = open('csvexample4.csv', 'a')  
-        with myFile:  
-           writer = csv.writer(myFile,delimiter=',',quoting=csv.QUOTE_ALL)
-           writer.writerow(abc)
+        #myFile = open('csvexample4.csv', 'a')  
+        #with myFile:  
+        #   writer = csv.writer(myFile,delimiter=',',quoting=csv.QUOTE_ALL)
+        #   writer.writerow(abc)
 
     # sleep 5s before next polling
-    time.sleep(5)
+	#print(abc[0])
+   time.sleep(0.5)
